@@ -4,9 +4,28 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Document</title>
+    <title>Etch-A-Sketch</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <header class="header">
+      <h1>Etch-A-Sketch</h1>
+      <input
+        type="text"
+        name="text"
+        id="textInput"
+        class="gridSize"
+        value="How many grids"
+      />
+      <input
+        type="submit"
+        onclick="createGrid(6)"
+        value="click me"
+        class="button"
+      />
+    </header>
+
+    <div class="container"></div>
     <script src="main.js"></script>
   </body>
 </html>
