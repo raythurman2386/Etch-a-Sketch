@@ -1,5 +1,8 @@
 const gridSquare = document.querySelector(".gridSquare");
-const button = document.querySelector(".button");
+
+const button = document
+  .querySelector(".button")
+  .addEventListener("click", resetGrid);
 
 function createGrid() {
   const gridSize = 32;
@@ -22,6 +25,13 @@ function fillBlack() {
     square.addEventListener("mouseover", function(e) {
       e.target.setAttribute("style", "background: black");
     });
+  });
+}
+
+function resetGrid() {
+  const squares = document.querySelectorAll(".gridSquare");
+  squares.forEach(square => {
+    square.setAttribute("style", "background: white");
   });
 }
 
