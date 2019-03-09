@@ -1,5 +1,3 @@
-const gridSquare = document.querySelector(".gridSquare");
-
 const button = document
   .querySelector(".button")
   .addEventListener("click", resetGrid);
