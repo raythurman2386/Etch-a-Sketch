@@ -25,6 +25,11 @@
   height: 640px;
 }
 
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .gridSquare {
   display: flex;
   width: 20px;
