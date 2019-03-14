@@ -1,19 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Etch-A-Sketch</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>ETCH-A-SKETCH</title>
+    <link href="style.css" rel="stylesheet" />
   </head>
-  <body>
-    <header class="header">
-      <h1>Etch-A-Sketch</h1>
-      <button type="submit" class="button">Reset</button>
-    </header>
 
-    <div class="container"></div>
+  <body>
+    <h1>ETCH a SKETCH</h1>
+    <div class="container">
+      <div id="canvas"></div>
+      <button id="clear" class="button-primary">Clear Canvas</button>
+      <button id="rainbow">Rainbow mode</button>
+      <select id="pixel-size-list">
+        <option value="16" selected>16x16</option>
+        <option value="64">64x64</option>
+        <option value="100">100x100</option>
+      </select>
+    </div>
     <script src="main.js"></script>
   </body>
 </html>
